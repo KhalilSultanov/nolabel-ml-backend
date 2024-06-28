@@ -41,7 +41,7 @@ def predict(text):
 
 app = Flask(__name__)
 
-@app.route('/propt', methods=['GET'])
+@app.route('/prompt', methods=['GET'])
 def propt():
     text = request.args.get('text')
     if not text:
